@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whispaper 1.0.0</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3ec;
+      --ink: #241d16;
+      --muted: #6b604f;
+      --line: rgba(96, 74, 48, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(188, 149, 99, 0.16), transparent 30%),
+        linear-gradient(160deg, #faf6ef, var(--paper) 42%, #ece5d9);
+    }
+    main {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(51, 39, 24, 0.12);
+      padding: 34px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    p, li {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Whispaper 1.0.0</h1>
+    <p class="meta">第一版发布说明</p>
+
+    <h2>本次包含</h2>
+    <ul>
+      <li>普通 macOS App 形态，不使用 Menu Bar 模式。</li>
+      <li>离线 STT 转写，模型与 App 分离，默认使用 Application Support 外置模型目录。</li>
+      <li>在线笔记生成与笔记语言设置。</li>
+      <li>逐段在线翻译与目标语言选择。</li>
+      <li>设置页分类整理，以及应用内 Sparkle 更新入口。</li>
+    </ul>
+
+    <h2>分发说明</h2>
+    <p>此版本开始采用 Sparkle 更新机制。后续正式发布包会通过 GitHub Releases 托管，并由 appcast.xml 统一提供更新元数据。</p>
+  </main>
+</body>
+</html>
