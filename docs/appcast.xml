@@ -3,15 +3,15 @@
     <channel>
         <title>Whispaper</title>
         <item>
-            <title>1.0.0</title>
-            <pubDate>Thu, 16 Apr 2026 00:56:54 +0800</pubDate>
+            <title>1.0.1</title>
+            <pubDate>Thu, 16 Apr 2026 11:23:00 +0800</pubDate>
             <link>https://github.com/xiaohuliming/Whispaper</link>
-            <sparkle:version>100</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:version>101</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <sparkle:releaseNotesLink>https://xiaohuliming.github.io/Whispaper-Releases/release-notes/Whispaper-1.0.0.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/xiaohuliming/Whispaper-Releases/releases/download/v1.0.0/Whispaper-1.0.0.zip" length="181465444" type="application/octet-stream" sparkle:edSignature="yaSMJ/HU6/Y6jzw7oyZavqCYcl62HiFlGW1dmHm/PE1mxObfV/L4yy2WutAuM4vO13CfbrMsCsWYNTIF2l9+AA=="/>
+            <sparkle:releaseNotesLink>https://xiaohuliming.github.io/Whispaper-Releases/release-notes/Whispaper-1.0.1.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/xiaohuliming/Whispaper-Releases/releases/download/v1.0.1/Whispaper-1.0.1.zip" length="182139630" type="application/octet-stream" sparkle:edSignature="x+fVMM6SQLLMKVfAFnzb3dSwLUUL6WXZJzunPCiirJoxrHAye2JZqwadKfW3Xh/gzWUdW+h6OjMWMANAxCX6DQ=="/>
         </item>
     </channel>
 </rss>
