@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whispaper 1.0.2</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3ec;
+      --ink: #241d16;
+      --muted: #6b604f;
+      --line: rgba(96, 74, 48, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(188, 149, 99, 0.16), transparent 30%),
+        linear-gradient(160deg, #faf6ef, var(--paper) 42%, #ece5d9);
+    }
+    main {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(51, 39, 24, 0.12);
+      padding: 34px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    p, li {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Whispaper 1.0.2</h1>
+    <p class="meta">内测更新说明</p>
+
+    <h2>本次更新</h2>
+    <ul>
+      <li>新增笔记本首页和笔记本内页面，进入笔记本后可先管理参考资料与历史笔记，再开始转录。</li>
+      <li>参考资料支持点击选择和拖拽上传，支持 PDF、PPTX、DOCX、Markdown 和文本文件。</li>
+      <li>参考资料按内容哈希去重，重复上传会跳过并清理历史重复副本。</li>
+      <li>本地 RAG 解析层升级：PDF 按页、PPTX 按幻灯片和文本块、DOCX 按标题和段落建立可引用片段。</li>
+      <li>本地 RAG 索引升级为 SQLite FTS5 + 本地语义索引的双通道检索，笔记生成时更容易命中课件里的术语和事实。</li>
+      <li>参考资料区默认折叠，保留说明文案，并显示叠放文件卡片预览，减少历史笔记被资料列表挤下去的问题。</li>
+      <li>修复上传文献无反应、转录声纹不显示、`python-multipart` 打包缺失等问题。</li>
+    </ul>
+
+    <h2>说明</h2>
+    <p>本次仍然是 GitHub Releases 分发的内测包，适合验证笔记本、参考资料和本地 RAG 工作流，不包含正式签名和 notarization。</p>
+  </main>
+</body>
+</html>
