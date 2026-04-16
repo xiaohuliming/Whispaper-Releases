@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whispaper 1.0.1</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f3ec;
+      --ink: #241d16;
+      --muted: #6b604f;
+      --line: rgba(96, 74, 48, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(188, 149, 99, 0.16), transparent 30%),
+        linear-gradient(160deg, #faf6ef, var(--paper) 42%, #ece5d9);
+    }
+    main {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(51, 39, 24, 0.12);
+      padding: 34px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .meta {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    p, li {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Whispaper 1.0.1</h1>
+    <p class="meta">内测更新说明</p>
+
+    <h2>本次更新</h2>
+    <ul>
+      <li>修复 backend 启动卡在欢迎页的问题，避免配置字段错误导致健康检查失败。</li>
+      <li>补上标准 macOS 菜单栏，恢复复制、粘贴、全选等系统编辑操作。</li>
+      <li>修复“查看模型清单”错误跳浏览器下载的问题，改为应用内查看清单内容。</li>
+      <li>离线转写支持本地多模型选择，新增 `Whisper Large V3 Turbo Q4`、`Medium`、`Small`、`Tiny` 等选项。</li>
+      <li>新增“自定义本地模型目录”，可以把本机已有的 Whisper 兼容模型目录挂进 Whispaper 使用。</li>
+      <li>backend 启动改为动态端口，避免重启后复用旧进程导致前端资源和行为不一致。</li>
+    </ul>
+
+    <h2>说明</h2>
+    <p>本次仍然是 GitHub Releases 分发的内测包，适合验证 Sparkle 更新链路和模型切换逻辑，不包含正式签名和 notarization。</p>
+  </main>
+</body>
+</html>
